@@ -29,10 +29,16 @@ int main(int argc, char** argv) {
     cout<<crdCard<<endl;
     //Now create a function that fills the last digit
     //using the Luhn Algorithm
+    Luhn(crdCard,SIZE);
     cout<<"The random number with Luhn Encoding, Output Here!"<<endl;
+    cout<<crdCard;
     
     //Exit Stage Right
     return 0;
+}
+
+void Luhn(char[],int){
+    
 }
 
 void prpLuhn(char cc[],int n){
@@ -49,6 +55,3 @@ void prpLuhn(char cc[],int n){
 char rndDgit(){
     return rand()%10+48;
 }
-
-
-
